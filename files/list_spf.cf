@@ -1,0 +1,14 @@
+#This file manage for puppet
+loadplugin Mail::SpamAssassin::Plugin::SPF
+
+ifplugin Mail::SpamAssassin::Plugin::SPF
+score SPF_PASS -0.05
+score SPF_HELO_PASS -0.001
+score SPF_FAIL 0 0.09 0 0.001 # n=0 n=2
+score SPF_HELO_FAIL 0 0.09 0 0.001 # n=0 n=2
+score SPF_HELO_NEUTRAL 0 0.001 0 0.112 # n=0 n=2
+score SPF_HELO_SOFTFAIL 0 0.896 0 0.732 # n=0 n=2
+score SPF_NEUTRAL 0 0.652 0 0.779 # n=0 n=2
+score SPF_SOFTFAIL 0 0.972 0 0.665 # n=0 n=2
+endif # Mail::SpamAssassin::Plugin::SPF
+
