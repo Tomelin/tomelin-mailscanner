@@ -1,0 +1,356 @@
+%etc_dir% = <%= $etc_dir %>
+report_dir = <%= $report_dir %>
+%rules_dir% = <%= $rules_dir %>
+%mcp_dir% = <%= $mcp_dir %>
+Run As User = <%= $run_as_user %>
+Run As Group = <%= $run_as_group %>
+Queue Scan Interval = <%= $queue_scan_interval %>
+Incoming Queue Dir = <%= $incoming_queue_dir %>
+Outgoing Queue Dir = <%= $outgoing_queue_dir %>
+Incoming Work Dir = <%= $incoming_work_dir %>
+Quarantine Dir = <%= $quarantine_dir %>
+PID file = <%= $pid_file %>
+MTA = <%= $mta %>
+Sendmail = <%= $sendmail %>
+Sendmail2 = <%= $sendmail2 %>
+Incoming Work User = <%= $incoming_work_user %>
+Incoming Work Group = <%= $incoming_work_group %>
+Incoming Work Permissions = <%= $incoming_work_permissions %>
+Quarantine User = <%= $quarantine_user %>
+Quarantine Group = <%= $quarantine_group %>
+Quarantine Permissions = <%= $quarantine_permissions %>
+Max Unscanned Bytes Per Scan = <%= $max_unscanned_bytes_per_scan %>
+Max Unsafe Bytes Per Scan = <%= $max_unsafe_bytes_per_scan %>
+Max Unscanned Messages Per Scan = <%= $max_unscanned_messages_per_scan %>
+Max Unsafe Messages Per Scan = <%= $max_unsafe_messages_per_scan %>
+Max Normal Queue Size = <%= $max_normal_queue_size %>
+Maximum Processing Attempts = <%= $maximum_processing_attempts %>
+Processing Attempts Database = <%= $processing_attempts_database %>
+Expand TNEF = <%= $expand_tnef %>
+Use TNEF Contents = <%= $use_tnef_contents %>
+Deliver Unparsable TNEF = <%= $deliver_unparsable_tnef %>
+TNEF Expander = <%= $tnef_expander %>
+TNEF Timeout = <%= $tnef_timeout %>
+File Command = <%= $file_command %>
+File Timeout = <%= $file_timeout %>
+Gunzip Command = <%= $gunzip_command %>
+Gunzip Timeout = <%= $gunzip_timeout %>
+Unrar Command = <%= $unrar_command %>
+Unrar Timeout = <%= $unrar_timeout %>
+Find UU_Encoded Files = <%= $find_uu_encoded_files %>
+Minimum Attachment Size = <%= $minimum_attachment_size %>
+Unpack Microsoft Documents = <%= $unpack_microsoft_documents %>
+Add Text Of Doc = <%= $add_text_of_doc %>
+Antiword = <%= $antiword %>
+Antiword Timeout = <%= $antiword_timeout %>
+Unzip Maximum Files Per Archive = <%= $unzip_maximum_files_per_archive %>
+Unzip Maximum File Size = <%= $unzip_maximum_file_size %>
+Unzip Filenames = <%= $unzip_filenames %>
+Unzip MimeType = <%= $unzip_mimetype %>
+Virus Scanners = <%= $virus_scanners %>
+Virus Scanner Timeout = <%= $virus_scanner_timeout %>
+Deliver Disinfected Files = <%= $deliver_disinfected_files %>
+Silent Viruses = <%= $silent_viruses %>
+Still Deliver Silent Viruses = <%= $still_deliver_silent_viruses %>
+Non_Forging Viruses = <%= $non_forging_viruses %>
+Spam_Virus Header = <%= $spam_virus_header %>
+Virus Names Which Are Spam = <%= $virus_names_which_are_spam %>
+Check Filenames In Password_Protected Archives = <%= $check_filenames_in_password_protected_archives %>
+Monitors for ClamAV Updates = <%= $monitors_for_clamav_updates %>
+Clamd Port = <%= $clamd_port %>
+Clamd Socket = <%= $clamd_socket %>
+Clamd Lock File = <%= $clamd_lock_file %>
+Clamd Use Threads = <%= $clamd_use_threads %>
+ClamAV Full Message Scan = <%= $clamav_full_message_scan %>
+Use Stricter Phishing Net = <%= $use_stricter_phishing_net %>
+Highlight Phishing Fraud = <%= $highlight_phishing_fraud %>
+Phishing Safe Sites File = <%= $phishing_safe_sites_file %>
+Phishing Bad Sites File = <%= $phishing_bad_sites_file %>
+Country Sub_Domains List = <%= $country_sub_domains_list %>
+Ignored Web Bug Filenames = <%= $ignored_web_bug_filenames %>
+Known Web Bug Servers = <%= $known_web_bug_servers %>
+Web Bug Replacement = <%= $web_bug_replacement %>
+Convert Dangerous HTML To Text = <%= $convert_dangerous_html_to_text %>
+Archives Are = <%= $archives_are %>
+Filename Rules = <%= $filename_rules %>
+Filetype Rules = <%= $filetype_rules %>
+Allow Filetypes = <%= $allow_filetypes %>
+Deny Filetypes = <%= $deny_filetypes %>
+Archives: Allow Filenames = <%= $archives_allow_filenames %>
+Archives: Deny Filenames = <%= $archives_deny_filenames %>
+Archives: Filename Rules = <%= $archives_filename_rules %>
+Archives: Allow Filetypes = <%= $archives_allow_filetypes %>
+Archives: Allow File MIME Types = <%= $archives_allow_file_mime_types %>
+Archives: Deny Filetypes = <%= $archives_deny_filetypes %>
+Archives: Deny File MIME Types = <%= $archives_deny_file_mime_types %>
+Archives: Filetype Rules = <%= $archives_filetype_rules %>
+Quarantine Silent Viruses = <%= $quarantine_silent_viruses %>
+Quarantine Modified Body = <%= $quarantine_modified_body %>
+Quarantine Whole Message = <%= $quarantine_whole_message %>
+Quarantine Whole Messages As Queue Files = <%= $quarantine_whole_messages_as_queue_files %>
+Keep Spam And MCP Archive Clean = <%= $keep_spam_and_mcp_archive_clean %>
+Language Strings = <%= $language_strings %>
+Rejection Report = <%= $rejection_report %>
+Deleted Bad Content Message Report  = <%= $deleted_bad_content_message_report %>
+Deleted Bad Filename Message Report = <%= $deleted_bad_filename_message_report %>
+Deleted Virus Message Report        = <%= $deleted_virus_message_report %>
+Deleted Size Message Report        = <%= $deleted_size_message_report %>
+Stored Bad Content Message Report  = <%= $stored_bad_content_message_report %>
+Stored Bad Filename Message Report = <%= $stored_bad_filename_message_report %>
+Stored Virus Message Report        = <%= $stored_virus_message_report %>
+Stored Size Message Report        = <%= $stored_size_message_report %>
+Disinfected Report = <%= $disinfected_report %>
+Inline HTML Signature = <%= $inline_html_signature %>
+Inline Text Signature = <%= $inline_text_signature %>
+Signature Image Filename = <%= $signature_image_filename %>
+Signature Image <img> Filename = <%= $signature_image_img_filename %>
+Inline HTML Warning = <%= $inline_html_warning %>
+Inline Text Warning = <%= $inline_text_warning %>
+Sender Content Report        = <%= $sender_content_report %>
+Sender Error Report        = <%= $sender_error_report %>
+Sender Bad Filename Report = <%= $sender_bad_filename_report %>
+Sender Virus Report        = <%= $sender_virus_report %>
+Sender Size Report         = <%= $sender_size_report %>
+Hide Incoming Work Dir = <%= $hide_incoming_work_dir %>
+Include Scanner Name In Reports = <%= $include_scanner_name_in_reports %>
+Mail Header = <%= $mail_header %>
+Spam Header = <%= $spam_header %>
+Spam Score Header = <%= $spam_score_header %>
+Information Header = <%= $information_header %>
+Add Envelope From Header = <%= $add_envelope_from_header %>
+Add Envelope To Header = <%= $add_envelope_to_header %>
+Envelope From Header = <%= $envelope_from_header %>
+Envelope To Header = <%= $envelope_to_header %>
+ID Header = <%= $id_header %>
+IP Protocol Version Header = <%= $ip_protocol_version_header %>
+Spam Score Character = <%= $spam_score_character %>
+SpamScore Number Instead Of Stars = <%= $spamscore_number_instead_of_stars %>
+Minimum Stars If On Spam List = <%= $minimum_stars_if_on_spam_list %>
+Clean Header Value       = <%= $clean_header_value %>
+Infected Header Value    = <%= $infected_header_value %>
+Disinfected Header Value = <%= $disinfected_header_value %>
+Information Header Value = <%= $information_header_value %>
+Detailed Spam Report = <%= $detailed_spam_report %>
+Include Scores In SpamAssassin Report = <%= $include_scores_in_spamassassin_report %>
+Always Include SpamAssassin Report = <%= $always_include_spamassassin_report %>
+Multiple Headers = <%= $multiple_headers %>
+Place New Headers At Top Of Message = <%= $place_new_headers_at_top_of_message %>
+Sign Messages Already Processed = <%= $sign_messages_already_processed %>
+Attach Image To Signature = <%= $attach_image_to_signature %>
+Attach Image To HTML Message Only = <%= $attach_image_to_html_message_only %>
+Allow Multiple HTML Signatures = <%= $allow_multiple_html_signatures %>
+Dont Sign HTML If Headers Exist = <%= $dont_sign_html_if_headers_exist %>
+Mark Infected Messages = <%= $mark_infected_messages %>
+Unscanned Header Value = <%= $unscanned_header_value %>
+Remove These Headers = <%= $remove_these_headers %>
+Deliver Cleaned Messages = <%= $deliver_cleaned_messages %>
+Never Notify Senders Of Precedence = <%= $never_notify_senders_of_precedence %>
+Scanned Modify Subject = <%= $scanned_modify_subject %>
+Scanned Subject Text = <%= $scanned_subject_text %>
+Virus Modify Subject = <%= $virus_modify_subject %>
+Virus Subject Text = <%= $virus_subject_text %>
+Filename Modify Subject = <%= $filename_modify_subject %>
+Filename Subject Text = <%= $filename_subject_text %>
+Size Modify Subject = <%= $size_modify_subject %>
+Size Subject Text = <%= $size_subject_text %>
+Warning Is Attachment = <%= $warning_is_attachment %>
+Attachment Warning Filename = <%= $attachment_warning_filename %>
+Attachment Encoding Charset = <%= $attachment_encoding_charset %>
+Archive Mail = <%= $archive_mail %>
+Missing Mail Archive Is = <%= $missing_mail_archive_is %>
+Notices Include Full Headers = <%= $notices_include_full_headers %>
+Hide Incoming Work Dir in Notices = <%= $hide_incoming_work_dir_in_notices %>
+Notice Signature = <%= $notice_signature %>
+Notices From = <%= $notices_from %>
+Local Postmaster = <%= $local_postmaster %>
+Spam List Definitions = <%= $spam_list_definitions %>
+Virus Scanner Definitions = <%= $virus_scanner_definitions %>
+Spam Lists To Be Spam = <%= $spam_lists_to_be_spam %>
+Spam Lists To Reach High Score = <%= $spam_lists_to_reach_high_score %>
+Spam List Timeout = <%= $spam_list_timeout %>
+Max Spam List Timeouts = <%= $max_spam_list_timeouts %>
+Spam List Timeouts History = <%= $spam_list_timeouts_history %>
+Is Definitely Not Spam = <%= $is_definitely_not_spam %>
+Is Definitely Spam = <%= $is_definitely_spam %>
+Definite Spam Is High Scoring = <%= $definite_spam_is_high_scoring %>
+Ignore Spam Whitelist If Recipients Exceed = <%= $ignore_spam_whitelist_if_recipients_exceed %>
+Use Watermarking = <%= $use_watermarking %>
+Add Watermark = <%= $add_watermark %>
+Check Watermarks With No Sender = <%= $check_watermarks_with_no_sender %>
+Treat Invalid Watermarks With No Sender as Spam = <%= $treat_invalid_watermarks_with_no_sender_as_spam %>
+Check Watermarks To Skip Spam Checks = <%= $check_watermarks_to_skip_spam_checks %>
+Watermark Secret = <%= $watermark_secret %>
+Watermark Lifetime = <%= $watermark_lifetime %>
+Watermark Header = <%= $watermark_header %>
+Use SpamAssassin = <%= $use_spamassassin %>
+SpamAssassin Auto Whitelist = <%= $spamassassin_auto_whitelist %>
+SpamAssassin Timeout = <%= $spamassassin_timeout %>
+Max SpamAssassin Timeouts = <%= $max_spamassassin_timeouts %>
+SpamAssassin Timeouts History = <%= $spamassassin_timeouts_history %>
+Check SpamAssassin If On Spam List = <%= $check_spamassassin_if_on_spam_list %>
+Include Binary Attachments In SpamAssassin = <%= $include_binary_attachments_in_spamassassin %>
+Spam Score = <%= $spam_score %>
+Cache SpamAssassin Results = <%= $cache_spamassassin_results %>
+SpamAssassin Cache Database File = <%= $spamassassin_cache_database_file %>
+Wait During Bayes Rebuild = <%= $wait_during_bayes_rebuild %>
+Use Custom Spam Scanner = <%= $use_custom_spam_scanner %>
+Max Custom Spam Scanner Size = <%= $max_custom_spam_scanner_size %>
+Custom Spam Scanner Timeout = <%= $custom_spam_scanner_timeout %>
+Max Custom Spam Scanner Timeouts = <%= $max_custom_spam_scanner_timeouts %>
+Custom Spam Scanner Timeout History = <%= $custom_spam_scanner_timeout_history %>
+Sender Spam Report         = <%= $sender_spam_report %>
+Sender Spam List Report    = <%= $sender_spam_list_report %>
+Sender SpamAssassin Report = <%= $sender_spamassassin_report %>
+Inline Spam Warning = <%= $inline_spam_warning %>
+Recipient Spam Report = <%= $recipient_spam_report %>
+Enable Spam Bounce = <%= $enable_spam_bounce %>
+Bounce Spam As Attachment = <%= $bounce_spam_as_attachment %>
+Syslog Facility = <%= $syslog_facility %>
+Log Speed = <%= $log_speed %>
+Log Spam = <%= $log_spam %>
+Log Non Spam = <%= $log_non_spam %>
+Log Delivery And Non_Delivery = <%= $log_delivery_and_non_delivery %>
+Log Permitted Filenames = <%= $log_permitted_filenames %>
+Log Permitted Filetypes = <%= $log_permitted_filetypes %>
+Log Permitted File MIME Types = <%= $log_permitted_file_mime_types %>
+Log Silent Viruses = <%= $log_silent_viruses %>
+Log Dangerous HTML Tags = <%= $log_dangerous_html_tags %>
+Log SpamAssassin Rule Actions = <%= $log_spamassassin_rule_actions %>
+SpamAssassin Temporary Dir = <%= $spamassassin_temporary_dir %>
+SpamAssassin User State Dir = <%= $spamassassin_user_state_dir %>
+SpamAssassin Install Prefix = <%= $spamassassin_install_prefix %>
+SpamAssassin Site Rules Dir = <%= $spamassassin_site_rules_dir %>
+SpamAssassin Local Rules Dir = <%= $spamassassin_local_rules_dir %>
+SpamAssassin Local State Dir = <%= $spamassassin_local_state_dir %>
+SpamAssassin Default Rules Dir = <%= $spamassassin_default_rules_dir %>
+DB DSN = <%= $db_dsn %>
+DB Username = <%= $db_username %>
+DB Password = <%= $db_password %>
+SQL Serial Number = <%= $sql_serial_number %>
+SQL Quick Peek = <%= $sql_quick_peek %>
+SQL Config = <%= $sql_config %>
+SQL Ruleset = <%= $sql_ruleset %>
+SQL SpamAssassin Config = <%= $sql_spamassassin_config %>
+SQL Debug = <%= $sql_debug %>
+MCP Checks = <%= $mcp_checks %>
+First Check = <%= $first_check %>
+MCP Required SpamAssassin Score = <%= $mcp_required_spamassassin_score %>
+MCP High SpamAssassin Score = <%= $mcp_high_spamassassin_score %>
+MCP Error Score = <%= $mcp_error_score %>
+MCP Header = <%= $mcp_header %>
+Non MCP Actions = <%= $non_mcp_actions %>
+MCP Actions = <%= $mcp_actions %>
+High Scoring MCP Actions = <%= $high_scoring_mcp_actions %>
+Bounce MCP As Attachment = <%= $bounce_mcp_as_attachment %>
+MCP Modify Subject = <%= $mcp_modify_subject %>
+MCP Subject Text = <%= $mcp_subject_text %>
+High Scoring MCP Modify Subject = <%= $high_scoring_mcp_modify_subject %>
+High Scoring MCP Subject Text = <%= $high_scoring_mcp_subject_text %>
+Is Definitely MCP = <%= $is_definitely_mcp %>
+Is Definitely Not MCP = <%= $is_definitely_not_mcp %>
+Definite MCP Is High Scoring = <%= $definite_mcp_is_high_scoring %>
+Always Include MCP Report = <%= $always_include_mcp_report %>
+Detailed MCP Report = <%= $detailed_mcp_report %>
+Include Scores In MCP Report = <%= $include_scores_in_mcp_report %>
+Log MCP = <%= $log_mcp %>
+MCP Max SpamAssassin Timeouts = <%= $mcp_max_spamassassin_timeouts %>
+MCP Max SpamAssassin Size = <%= $mcp_max_spamassassin_size %>
+MCP SpamAssassin Timeout = <%= $mcp_spamassassin_timeout %>
+MCP SpamAssassin Prefs File = <%= $mcp_spamassassin_prefs_file %>
+MCP SpamAssassin User State Dir = <%= $mcp_spamassassin_user_state_dir %>
+MCP SpamAssassin Local Rules Dir = <%= $mcp_spamassassin_local_rules_dir %>
+MCP SpamAssassin Default Rules Dir = <%= $mcp_spamassassin_default_rules_dir %>
+MCP SpamAssassin Install Prefix = <%= $mcp_spamassassin_install_prefix %>
+Recipient MCP Report = <%= $recipient_mcp_report %>
+Sender MCP Report = <%= $sender_mcp_report %>
+Use Default Rules With Multiple Recipients = <%= $use_default_rules_with_multiple_recipients %>
+Read IP Address From Received Header = <%= $read_ip_address_from_received_header %>
+Spam Score Number Format = <%= $spam_score_number_format %>
+MailScanner Version Number = <%= $mailscanner_version_number %>
+SpamAssassin Cache Timings = <%= $spamassassin_cache_timings %>
+Debug = <%= $debug %>
+Debug SpamAssassin = <%= $debug_spamassassin %>
+Run In Foreground = <%= $run_in_foreground %>
+Always Looked Up Last = <%= $always_looked_up_last %>
+Always Looked Up Last After Batch = <%= $always_looked_up_last_after_batch %>
+Deliver In Background = <%= $deliver_in_background %>
+Delivery Method = <%= $delivery_method %>
+Split Exim Spool = <%= $split_exim_spool %>
+Lockfile Dir = <%= $lockfile_dir %>
+Custom Functions Dir = <%= $custom_functions_dir %>
+Lock Type = <%= $lock_type %>
+Syslog Socket Type = <%= $syslog_socket_type %>
+Automatic Syntax Check = <%= $automatic_syntax_check %>
+Minimum Code Status = <%= $minimum_code_status %>
+WarningUrlPage = <%= $warningurlpage %>
+WarningUrlPageID  = <%= $warningurlpageid %>
+Dangerous Content Scanning = <%= $dangerous_content_scanning %>
+Max Children = <%= $max_children %>
+%org_long_name% = <%= $org_long_name %>
+%org_name% = <%= $org_name %>
+%web_site% = <%= $web_site %>
+Maximum Archive Depth = <%= $maximum_archive_depth %>
+Find Archives By Content = <%= $find_archives_by_content %>
+Hostname = <%= $hostname %>
+Content Subject Text = <%= $content_subject_text %>
+Disarmed Subject Text = <%= $disarmed_subject_text %>
+Phishing Subject Text = <%= $phishing_subject_text %>
+Max Spam Check Size = <%= $max_spam_check_size %>
+Max SpamAssassin Size = <%= $max_spamassassin_size %>
+Rebuild Bayes Every = <%= $rebuild_bayes_every %>
+Spam Subject Text = <%= $spam_subject_text %>
+High Scoring Spam Subject Text = <%= $high_scoring_spam_subject_text %>
+Time that will be stored in the e_mail in quarantine = <%= $time_that_will_be_stored_in_the_e_mail_in_quarantine %>
+Time responsible for performing the cleaning of quarantine = <%= $time_responsible_for_performing_the_cleaning_of_quarantine %>
+Scan Messages = <%= $scan_messages %>
+Reject Message = <%= $reject_message %>
+Maximum Attachments Per Message = <%= $maximum_attachments_per_message %>
+Maximum Message Size = <%= $maximum_message_size %>
+Maximum Attachment Size = <%= $maximum_attachment_size %>
+Zip Attachments = <%= $zip_attachments %>
+Attachments Zip Filename = <%= $attachments_zip_filename %>
+Attachments Min Total Size To Zip = <%= $attachments_min_total_size_to_zip %>
+Attachment Extensions Not To Zip = <%= $attachment_extensions_not_to_zip %>
+Virus Scanning = <%= $virus_scanning %>
+Block Encrypted Messages = <%= $block_encrypted_messages %>
+Block Unencrypted Messages = <%= $block_unencrypted_messages %>
+Allow Password_Protected Archives = <%= $allow_password_protected_archives %>
+Allow Partial Messages = <%= $allow_partial_messages %>
+Allow External Message Bodies = <%= $allow_external_message_bodies %>
+Find Phishing Fraud = <%= $find_phishing_fraud %>
+Also Find Numeric Phishing = <%= $also_find_numeric_phishing %>
+Allow IFrame Tags = <%= $allow_iframe_tags %>
+Allow Form Tags = <%= $allow_form_tags %>
+Allow Script Tags = <%= $allow_script_tags %>
+Allow WebBugs = <%= $allow_webbugs %>
+Allow Object Codebase Tags = <%= $allow_object_codebase_tags %>
+Convert HTML To Text = <%= $convert_html_to_text %>
+Allow Filenames = <%= $allow_filenames %>
+Deny Filenames = <%= $deny_filenames %>
+Allow File MIME Types = <%= $allow_file_mime_types %>
+Deny File MIME Types = <%= $deny_file_mime_types %>
+Quarantine Infections = <%= $quarantine_infections %>
+Sign Clean Messages = <%= $sign_clean_messages %>
+Notify Senders = <%= $notify_senders %>
+Notify Senders Of Viruses = <%= $notify_senders_of_viruses %>
+Notify Senders Of Blocked Filenames Or Filetypes = <%= $notify_senders_of_blocked_filenames_or_filetypes %>
+Notify Senders Of Blocked Size Attachments = <%= $notify_senders_of_blocked_size_attachments %>
+Notify Senders Of Other Blocked Content = <%= $notify_senders_of_other_blocked_content %>
+Content Modify Subject = <%= $content_modify_subject %>
+Disarmed Modify Subject = <%= $disarmed_modify_subject %>
+Phishing Modify Subject = <%= $phishing_modify_subject %>
+Send Notices = <%= $send_notices %>
+Notices To = <%= $notices_to %>
+Spam Checks = <%= $spam_checks %>
+Spam List = <%= $spam_list %>
+Spam Domain List = <%= $spam_domain_list %>
+Required SpamAssassin Score = <%= $required_spamassassin_score %>
+High SpamAssassin Score = <%= $high_spamassassin_score %>
+Spam Actions = <%= $spam_actions %>
+High Scoring Spam Actions = <%= $high_scoring_spam_actions %>
+Non Spam Actions = <%= $non_spam_actions %>
+Spam Modify Subject = <%= $spam_modify_subject %>
+High Scoring Spam Modify Subject = <%= $high_scoring_spam_modify_subject %>
+Convert URL Links = <%= $convert_url_links %>
+SpamAssassin Rule Actions = <%= $spamassassin_rule_actions %>
+WarningUrlPageRedirect = <%= $warningurlpageredirect %>
