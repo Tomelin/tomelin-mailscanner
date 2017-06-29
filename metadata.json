@@ -1,6 +1,6 @@
   {
   	"name": "tomelin-mailscanner",
-  	"version": "0.1.0",
+  	"version": "0.1.1",
   	"author": "Tomelin",
   	"summary": "Installing mailscanner for mailfilter",
   	"license": "Apache-2.0",
@@ -26,7 +26,11 @@
   		{
   			"name": "camptocamp-postfix",
   			"version_requirement": ">= 1.5.0"
-  		}
+  		},
+		{
+			"name": "tomelin-spamassassin",
+			"version_requirement": ">= 0.1.0"
+		}
 
   	],
   	"requirements": [{
