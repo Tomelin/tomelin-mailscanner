@@ -45,6 +45,5 @@
 class mailscanner {
 
 	include mailscanner::install 
-	
 
 }

@@ -1,7 +1,7 @@
 class mailscanner::service {
 
 
-	service { 'MailScanner':
+	service { 'mailscanner':
 		ensure      => 'running',
 		enable      => true,
 		hasrestart  => true,
